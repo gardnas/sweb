@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spencer's Portfolio</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class= "container">
+        <nav>
+            <img src="pictures/SpencerLogo.png" class = "logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="#services">Services</a></li> -->
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- <i class="fa-solid fa-x" onclick="closemenu()"></i> -->  
+            </ul>
+            <!-- <i class="fa-solid fa-bars" onclick="openmenu()"></i> -->
+        </nav>
+        <div class="header-text">
+            <p>Student at <span>UW</span></p>
+            <h1>Hi! I'm <span>Spencer</span> Gardner <br> from Spokane, WA</h1>
+        </div>
+    </div>
+</div>  
+<!-----------about--------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="pictures/about.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class = "sub-title"> About Me!</h1>
+                <p>My name is Spencer Gardner and I am a current sophmore at the Unviersity of Washington. 
+                    Thank you for checking out my website, feel free to click around and learn more about me!
+                </p>
+
+                <div class="tab-titles">
+                    <p class = "tab-links active-link" onclick="opentab('education')">Education</p>
+                    <p class = "tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class = "tab-links" onclick="opentab('skills')">Skills</p>
+                </div>
+                <div class="tab-contents" id = "skills">
+                    <ul>                        
+                        <li><span>Lab Skills</span><br>Experience with Gel Electrophoresis, CRISPR, Bacteria Culturing, Micropipetting</li>
+                        <li><span>Techincal Skills</span><br>Proficient: Java, Python, CSS, HTML <br> Familiar: Swift, C#, C, JavaScript, React</li>
+                        <li><span>Languages</span><br>Native English, Intermediate Spanish, Beginner Chinese/Mandarin</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id = "experience">
+                    <ul>                        
+                        <li><span>Flow Monitor, Providence Medical Center, Spokane WA - 2021-2022</span><br>Monitered and regulated the flow of patients beign vaccinated for COVID-19, 
+                            as well as answered questions they may have had regarding the questionairre sheet required to be filled out prior to being vaccinated. </li>
+                        <li><span>Private Tutor, Spokane WA - 2018-2020</span><br>Weekly tutor for elemenentry age students for their homework. Most of the time the subject was math, but I helped with English readings as well.</li>
+                        <li><span>Varisty Scocer Team Captain</span><br>Varisty soccer team captain during my senior year of high school.</li>
+                        <li><span>Brand Ambassador, RateMyDorm.com, Seattle WA - 2022-2023</span> <br> Brand ambassador for the website ratemydorm.com. Brought attention to and 
+                            provided opportunites for students at UW to write reviews on their dorms.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents active-tab" id = "education">
+                    <ul>                        
+                        <li><span>Current Student at the University of Washington - Expected graduation 2026</span><br>Sophmore at the University of Washington planning to study Computer Science and Neuroscience</li>
+                        <li><span>Lewis and Clark High School - Graduated in 2022</span><br>Graduated with high school diploma, 11 AP courses, GPA 4.2.</li>
+                        <li><span>Awards</span><br>Honor Roll 2018-2022 </li>
+                        <li><span>Leadership</span><br>Varsity Soccer Team Captain 2022</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- services -->
+<div id="services">
+    <div class="container">
+        <h1 class = "sub-title"> More About Me!</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Interests</h2>
+                <p>I have interests in AI/Machine Learning, Technology, Piano, Sports.</p>
+                    <!-- <a href="#">Learn more</a> -->
+            </div>
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>Extracurriculars</h2>
+                <p>Nuerobiology club member 2022-present, Chinese Student Association Member 2022-present, 
+                    Athlete in Basketball, Soccer, and Running.
+                </p>
+                    <!-- <a href="#">Learn more</a> -->
+            </div>
+            <div>
+                <!-- i class is for the icons, go to fontawesome for icons -->
+                <i class="fa-solid fa-laptop"></i> 
+                <h2>Relative Coursework</h2>
+                <p>Calculus I,II,III, Data Structures, Interfaces, Algortithims, General Chemistry, Biomedical Sciences. </p>
+                    <!-- <a href="#">Learn more</a> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- portfolio -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class = "sub-title"> Portfolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="pictures/Terrain.png">
+                <div class="layer">
+                    <h3>3D Terrain Generator Java</h3>
+                    <p>This program generates a 3D plane simulating a terrain using a 2D array in JavaScript.</p>
+                    <a href="https://github.com/gardnas/TerrainGen/blob/main/terrain_generator.pde"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="pictures/loginpage.png">
+                <div class="layer">
+                    <h3>Website Login Page</h3>
+                    <p>This website login page features a basic design, yet functional with multiple login ways. Used CSS and HTML.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="pictures/">
+                <div class="layer">
+                    <h3>Whisper AI Transcriber and Translator </h3>
+                    <p>This project uses an API key generated from openai to transcribe and translate audio files. Working
+                        to integrate it into an applcation, but just now runs through the terminal. </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<!-- Added for extra proj-->
+<!-- <div id="portfolio">
+    <div class="container">
+        <h1 class = "sub-title"> </h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="pictures/.png">
+                <div class="layer">
+                    <h3>TBD: Work in Progress</h3>
+                    <p>Currently working on this project</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="pictures/.png">
+                <div class="layer">
+                    <h3>TBD: Work in Progress</h3>
+                    <p>currently working on the project</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="pictures/">
+                <div class="layer">
+                    <h3>TBD: Work in Progress</h3>
+                    <p>currently wokring...</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div> -->
+        </div>
+        <a href="#" class = "btn"> See more</a>
+    </div>
+</div>
+<!-- End of added portion  -->
+
+<!-- contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class = "sub-title">Contact Me</h1>
+                <p> <a href="https://gmail.com"><i class="fa-solid fa-paper-plane"></i></a> Email: sdgard863@gmail.com</p>
+                <p> Other socials:</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/spencer-gardner-636b4722b/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    <!-- <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a> -->
+                    
+                </div>
+                <a href="pictures/SpencerResume .pdf" download class = "btn btn2" >Download Resume</a>
+            </div>
+            <!-- Because I need to setup the messaging system and the thing isn't wokring -->
+            <!-- <div class="contact-right">
+            <form >
+                <input type="text" name = "Name" placeholder="Your Name " required>
+                <input type="email" name = "Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                <button type="submit" class = "btn btn2">Submit</button>
+            </form>
+            </div> -->
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright: Created by Spencer Gardner.</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+var sidemeu =document.getElementById("sidemenu");
+function openmenu(){
+    sidemeu.style.right = "0";
+}
+function closemenu(){
+    sidemeu.style.right = "-200px";
+}
+
+</script>
+
+</body>
+</html>
